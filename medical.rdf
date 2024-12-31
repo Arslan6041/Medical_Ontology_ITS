@@ -1,0 +1,729 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical/"
+     xml:base="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical">
+        <rdfs:label xml:lang="en">This is medical students</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#associated_symptoms -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#associated_symptoms">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#CaseStudy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#contains_case_study -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#contains_case_study">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#EducationalModule"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#CaseStudy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#correct_treatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#correct_treatment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#CaseStudy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#diagnosed_with -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#diagnosed_with">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Diagnosis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#final_diagnosis -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#final_diagnosis">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Diagnosis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_body_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_body_part">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#BodyPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_body_part_affected -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_body_part_affected">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#BodyPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_current_symptoms -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_current_symptoms">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_genetic_disposition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_genetic_disposition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#RiskFactor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_medical_history -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_medical_history">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_risk_factor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_risk_factor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#RiskFactor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_symptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_symptom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#indicates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#indicates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#is_affected_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#is_affected_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#BodyPart"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#linked_to_disease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#linked_to_disease">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#RiskFactor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Treatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#linked_to_person -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#linked_to_person">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Diagnosis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#linked_to_treatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#linked_to_treatment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#quiz_assessment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#quiz_assessment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#EducationalModule"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Quiz"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#recommended_tests -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#recommended_tests">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#CaseStudy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Diagnosis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Diagnosis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#suspected_diseases -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#suspected_diseases">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#CaseStudy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#treatment_protocol -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#treatment_protocol">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#contagiousness_score -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#contagiousness_score">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#correct_answer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#correct_answer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Quiz"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#diagnosis_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#diagnosis_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Diagnosis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#duration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#feedback -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#feedback">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Quiz"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#follow_up_required -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#follow_up_required">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Diagnosis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_certainty_level -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_certainty_level">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Diagnosis"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_gender">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#involves_medication -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#involves_medication">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Treatment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#is_chronic -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#is_chronic">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#is_genetic -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#is_genetic">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#RiskFactor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#learning_objectives -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#learning_objectives">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#EducationalModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#likelihood -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#likelihood">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#medication_list -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#medication_list">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Treatment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#BodyPart"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#onset_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#onset_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#question_text -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#question_text">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Quiz"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#recommended_tests -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#recommended_tests">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#requires_hospitalization -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#requires_hospitalization">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Treatment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#risk_group -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#risk_group">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#RiskFactor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#risk_percentage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#risk_percentage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#RiskFactor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#score -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#score">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Quiz"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#severity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#severity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#target_audience -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#target_audience">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#EducationalModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#therapy_required -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#therapy_required">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Treatment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#therapy_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#therapy_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Treatment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#topic_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#topic_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#EducationalModule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#user_response -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#user_response">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Quiz"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#BodyPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#BodyPart">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#is_affected_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#is_affected_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#CaseStudy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#CaseStudy">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#associated_symptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#associated_symptoms"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#suspected_diseases"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#suspected_diseases"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Diagnosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Diagnosis">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#final_diagnosis"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#has_symptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#EducationalModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#EducationalModule">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#contains_case_study"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#CaseStudy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#contains_case_study"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Quiz"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#quiz_assessment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#CaseStudy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#quiz_assessment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Quiz"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Quiz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Quiz"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#RiskFactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#RiskFactor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#risk_percentage"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Treatment">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#linked_to_disease"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#BodyPart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#CaseStudy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Diagnosis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Disease"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#EducationalModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Quiz"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#RiskFactor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Symptom"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Abxyz/ontologies/2024/11/medical#Treatment"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
